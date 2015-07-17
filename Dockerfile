@@ -1,4 +1,4 @@
-FROM r-base:latest
+FROM hybridcheck:latest
 
 MAINTAINER Ben J. Ward "axolotlfan9250@gmail.com"
 
@@ -23,13 +23,7 @@ RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubu
     gdebi -n ss-latest.deb && \
     rm -f version.txt ss-latest.deb
 
-RUN R -e "install.packages(c('shiny', 'rmarkdown', 'shinydashboard', 'ggplot2', 'png', 'grid', 'gridExtra', 'ape'))"
-
-RUN R -e "source('http://bioconductor.org/biocLite.R'); biocLite(); biocLite('Biostrings', 'IRanges')"
-
-COPY HybridCheck_1.0.tar.gz /
-
-RUN R CMD INSTALL /HybridCheck_1.0.tar.gz
+RUN R -e "install.packages(c('shiny', 'rmarkdown', 'shinydashboard'))"
 
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
 
