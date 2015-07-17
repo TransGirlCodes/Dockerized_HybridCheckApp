@@ -7,6 +7,8 @@ The image is available from [Docker Hub](https://registry.hub.docker.com/u/ward9
 
 ## Usage:
 
+To use this container you will need Docker installed on your computer.
+
 To run this Shiny App on your computer:
 
 ```sh
