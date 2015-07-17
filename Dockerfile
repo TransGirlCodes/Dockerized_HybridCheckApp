@@ -1,4 +1,4 @@
-FROM hybridcheck:latest
+FROM ward9250/hybridcheck:latest
 
 MAINTAINER Ben J. Ward "axolotlfan9250@gmail.com"
 
