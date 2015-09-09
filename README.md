@@ -1,7 +1,7 @@
 Dockerized HybridCheck Shiny App
 ================================
 
-This is the Dockerized Shiny App for [HybridCheck](http://ward9250.github.io/HybridCheck/index.html)
+This is the Dockerized Shiny App for HybridCheck.
 
 The image is available from [Docker Hub](https://registry.hub.docker.com/u/ward9250/dockerized-hybridcheckapp/).
 
