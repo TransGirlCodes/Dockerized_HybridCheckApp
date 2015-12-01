@@ -12,7 +12,7 @@ To use this container you will need Docker installed on your computer.
 To run this Shiny App container on your computer:
 
 ```sh
-docker run --rm -p 80:80 ward9250/hybridcheckapp
+docker run --rm -p 80:80 ward9250/dockerized-hybridcheckapp
 ```
 
 If you are on OS X or Windows operating systems you need to use
